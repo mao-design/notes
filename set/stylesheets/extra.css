@@ -1,0 +1,61 @@
+/* html {
+	动画样式
+	scroll-behavior: smooth;
+} */
+
+[data-md-color-primary=pink] .md-typeset blockquote {
+	background: #ababab33;
+}
+
+[data-md-color-primary=black] .md-typeset blockquote {
+	background: #5e5e5e33;
+}
+
+[dir=ltr] .md-typeset blockquote {
+	padding: 0.1px 15px;
+	border-radius: 5px;
+}
+
+
+/* 代码块背景色 */
+[data-md-color-primary=pink] .md-typeset .highlighttable>tbody>tr>.code>div>pre>code {
+	border-radius: 0px 5px 5px 0px;
+	background: #ababab33;
+}
+
+[data-md-color-primary=pink] .highlighttable .linenos {
+	border-radius: 5px 0px 0px 5px;
+	background: #ababab33;
+}
+
+[data-md-color-primary=black] .md-typeset .highlighttable>tbody>tr>.code>div>pre>code {
+	border-radius: 0px 5px 5px 0px;
+	background: #5e5e5e33;
+}
+
+[data-md-color-primary=black] .highlighttable .linenos {
+	border-radius: 5px 0px 0px 5px;
+	background: #5e5e5e33;
+}
+
+
+/* 回到顶部标签背景色 */
+.md-top {
+	border-radius: 10px;
+}
+
+
+/* 代码背景色 */
+[data-md-color-primary=pink] .md-typeset code {
+	background-color: #dcdcdc;
+}
+
+[data-md-color-primary=black] .md-typeset code {
+	background-color: #484747;
+}
+
+
+/* 复制按钮颜色 */
+.md-clipboard {
+	color: #00000000;
+}
