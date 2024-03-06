@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../set/img/favicon1.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.12">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.13">
     
     
       
@@ -81,6 +81,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#mysql" class="md-skip">
+          跳转至
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -374,6 +379,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    ESC搭建论坛
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -383,6 +399,68 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mysql" class="md-nav__link">
+    <span class="md-ellipsis">
+      安装MySQL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mysqlroot" class="md-nav__link">
+    <span class="md-ellipsis">
+      配置MySQL的root密码
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apche" class="md-nav__link">
+    <span class="md-ellipsis">
+      安装Apche组件
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#php" class="md-nav__link">
+    <span class="md-ellipsis">
+      安装PHP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discuz" class="md-nav__link">
+    <span class="md-ellipsis">
+      安装Discuz
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -456,6 +534,59 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mysql" class="md-nav__link">
+    <span class="md-ellipsis">
+      安装MySQL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mysqlroot" class="md-nav__link">
+    <span class="md-ellipsis">
+      配置MySQL的root密码
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apche" class="md-nav__link">
+    <span class="md-ellipsis">
+      安装Apche组件
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#php" class="md-nav__link">
+    <span class="md-ellipsis">
+      安装PHP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discuz" class="md-nav__link">
+    <span class="md-ellipsis">
+      安装Discuz
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -473,9 +604,7 @@
 
 <p>本教程是基于 <code>CentOS 7</code> 搭建的</p>
 <p>LAMP 是 Linux、Apache、MySQL 和 PHP 的缩写，是 Discuz 论坛系统依赖的基础运行环境。我们先来准备 LAMP 环境。</p>
-<ol>
-<li>安装MySQL</li>
-</ol>
+<h2 id="mysql">安装MySQL<a class="headerlink" href="#mysql" title="Permanent link">&para;</a></h2>
 <p>首先更新yum源</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>rpm<span class="w"> </span>-Uvh<span class="w">  </span>http://dev.mysql.com/get/mysql57-community-release-el7-9.noarch.rpm
 </code></pre></div></td></tr></table></div>
@@ -491,9 +620,8 @@
 <p>设置MySQL服务开机自启动</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>mysqld
 </code></pre></div></td></tr></table></div>
-<ol>
-<li>配置MySQL的root密码</li>
-</ol>
+<hr />
+<h2 id="mysqlroot">配置MySQL的root密码<a class="headerlink" href="#mysqlroot" title="Permanent link">&para;</a></h2>
 <p>执行如下命令，查看/var/log/mysqld.log文件，获取root用户的初始密码</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>grep<span class="w"> </span><span class="s1">&#39;temporary password&#39;</span><span class="w"> </span>/var/log/mysqld.log
 </code></pre></div></td></tr></table></div>
@@ -514,9 +642,7 @@
 <p>退出MySQL</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">exit</span>
 </code></pre></div></td></tr></table></div>
-<ol>
-<li>安装Apche组件</li>
-</ol>
+<h2 id="apche">安装Apche组件<a class="headerlink" href="#apche" title="Permanent link">&para;</a></h2>
 <p>使用yum安装Apache组件</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>yum<span class="w"> </span>install<span class="w"> </span>httpd<span class="w"> </span>-y
 </code></pre></div></td></tr></table></div>
@@ -526,9 +652,7 @@
 <p>设置httpd为开机自启动</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>chkconfig<span class="w"> </span>httpd<span class="w"> </span>on
 </code></pre></div></td></tr></table></div>
-<ol>
-<li>安装PHP</li>
-</ol>
+<h2 id="php">安装PHP<a class="headerlink" href="#php" title="Permanent link">&para;</a></h2>
 <p>使用yum安装PHP环境</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>yum<span class="w"> </span>install<span class="w"> </span>php<span class="w"> </span>php-fpm<span class="w"> </span>php-mysql<span class="w"> </span>-y
 </code></pre></div></td></tr></table></div>
@@ -541,9 +665,7 @@
 <p>设置PHP-FPM为开机自启动</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>chkconfig<span class="w"> </span>php-fpm<span class="w"> </span>on
 </code></pre></div></td></tr></table></div>
-<ol>
-<li>安装Discuz</li>
-</ol>
+<h2 id="discuz">安装Discuz<a class="headerlink" href="#discuz" title="Permanent link">&para;</a></h2>
 <p>因为没有Discuz的yum源，所以我们需要自己去下载一个Discuz的压缩包</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>wget<span class="w"> </span>https://labfileapp.oss-cn-hangzhou.aliyuncs.com/PracticalTrain/Discuz_X3.2_SC_UTF8.zip
 </code></pre></div></td></tr></table></div>
@@ -554,9 +676,7 @@
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>unzip<span class="w"> </span>Discuz_X3.2_SC_UTF8.zip
 </code></pre></div></td></tr></table></div>
 <p>解压完后，就能在upload文件夹里看到discuz的源码了</p>
-<ol>
-<li>配置Discuz</li>
-</ol>
+<p>配置Discuz</p>
 <p>由于PHP默认访问 /var/www/html/ 文件夹，所以我们需要把upload文件夹里的文件都复制到 /var/www/html/ 文件夹</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>cp<span class="w"> </span>-r<span class="w"> </span>upload/*<span class="w"> </span>/var/www/html/
 </code></pre></div></td></tr></table></div>
@@ -570,9 +690,7 @@
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>http://“你的ECS服务器IP地址”/install
 </code></pre></div></td></tr></table></div>
 <p>进去有个安装向导，里面有个协议，点击同意；然后设置运行环境那里时选择全新安装，然后在点击下一步；然后安装数据库那里，跟着填就行，数据库密码，系统信箱，管理员账号以及密码，管理员邮件之类的，其它的可以默认</p>
-<ol>
-<li>最后就可以正常访问自己搭建的论坛了</li>
-</ol>
+<p>最后就可以正常访问自己搭建的论坛了</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>http://“你的ECS服务器IP地址”/install
 </code></pre></div></td></tr></table></div>
 

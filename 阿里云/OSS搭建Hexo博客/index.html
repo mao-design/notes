@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../set/img/favicon1.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.12">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.13">
     
     
       
@@ -472,19 +472,13 @@
   <h1>OSS搭建Hexo博客</h1>
 
 <p>以下教程是基于CentOS搭建的</p>
-<ol>
-<li>执行以下命令进行 Git 的安装：</li>
-</ol>
+<p>执行以下命令进行 Git 的安装：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>yum<span class="w"> </span>install<span class="w"> </span>git<span class="w"> </span>-y
 </code></pre></div></td></tr></table></div>
-<ol>
-<li>安装完成后，可以执行下方命令验证 Git 的版本：</li>
-</ol>
+<p>安装完成后，可以执行下方命令验证 Git 的版本：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>git<span class="w"> </span>--version
 </code></pre></div></td></tr></table></div>
-<ol>
-<li>安装 Node.js</li>
-</ol>
+<p>安装 Node.js</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>curl<span class="w"> </span>-sL<span class="w"> </span>https://rpm.nodesource.com/setup_14.x<span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>bash<span class="w"> </span>-<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>yum<span class="w"> </span>clean<span class="w"> </span>all<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>yum<span class="w"> </span>makecache<span class="w">  </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>yum<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>gcc-c++<span class="w"> </span>make<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>yum<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>nodejs
 </code></pre></div></td></tr></table></div>
 <p>验证node和npm</p>
@@ -492,17 +486,13 @@
 <span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>node<span class="w"> </span>-v
 npm<span class="w"> </span>-v
 </code></pre></div></td></tr></table></div>
-<ol>
-<li>安装Hexo</li>
-</ol>
+<p>安装Hexo</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>hexo-cli
 </code></pre></div></td></tr></table></div>
 <p>验证Hexo</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>hexo<span class="w"> </span>-v
 </code></pre></div></td></tr></table></div>
-<ol>
-<li>初始化博客项目</li>
-</ol>
+<p>初始化博客项目</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>hexo<span class="w"> </span>init<span class="w"> </span>blog<span class="w"> </span>--no-clone
 </code></pre></div></td></tr></table></div>
 <p>安装 hexo-deployer-cos 插件</p>
@@ -523,24 +513,14 @@ npm<span class="w"> </span>-v
 格式如下：
 IP地址:4000
 </code></pre></div></td></tr></table></div>
-<ol>
-<li>进入OSS控制台</li>
-</ol>
+<p>进入OSS控制台</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>URL：https://oss.console.aliyun.com/
 </code></pre></div></td></tr></table></div>
-<ol>
-<li>
 <p>在Bucket列表页面，单击Bucket名称；点击（Bucket）权限控制，将Bucket权限改为公共读写；进入Bucket文件列表，点击授权，然后在点击新增授权（进入到新增授权界面之后，在授权用户那里点击 所有用户 ；授权操作那里点击 读/写 ；条件那里点击 HTTP，然后确定即可）</p>
-</li>
-<li>
 <p>回到控制台，输入命令</p>
-</li>
-</ol>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>vim<span class="w"> </span>_config.yml
 </code></pre></div></td></tr></table></div>
-<ol>
-<li>在最下面替换掉原本的<code>deploy</code>内容，region查看https://help.aliyun.com/document_detail/31837.html?spm=a2c4g.11186623.2.12.39972c20YS7sKQ即可查到（我的OSS控制台上显示的是那个地区，那就输入那个地区的 Region ID），accessKeyId、accessKeySecret、bucket均可在云产品资源列表中查看（点击我的头像，点击AccessKey管理，然后创建即可）</li>
-</ol>
+<p>在最下面替换掉原本的<code>deploy</code>内容，region查看https://help.aliyun.com/document_detail/31837.html?spm=a2c4g.11186623.2.12.39972c20YS7sKQ即可查到（我的OSS控制台上显示的是那个地区，那就输入那个地区的 Region ID），accessKeyId、accessKeySecret、bucket均可在云产品资源列表中查看（点击我的头像，点击AccessKey管理，然后创建即可）</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
@@ -555,13 +535,9 @@ IP地址:4000
 </code></pre></div></td></tr></table></div>
 <p>注意：冒号一定要使用英文冒号，冒号前不能有空格，冒号后必须有一个空格，这是 yml 的固定写法。</p>
 <p>完成编辑后，按 esc 输入 :wq，保存退出。</p>
-<ol>
-<li>
 <p>执行以下命令重新生成静态文件并上传文件到自己的OSS服务器上</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>hexo<span class="w"> </span>g<span class="w"> </span>-d
 </code></pre></div></td></tr></table></div>
-</li>
-<li>
 <p>创建文章</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>hexo<span class="w"> </span>new<span class="w"> </span>first
@@ -571,11 +547,7 @@ vim<span class="w"> </span>source/_posts/first.md
 <p>最后在重新生成静态文件并部署到自己的OSS服务器上</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>hexo<span class="w"> </span>g<span class="w"> </span>-d
 </code></pre></div></td></tr></table></div>
-</li>
-<li>
 <p>最后进入到自己的OSS控制台，点击文件管理中的文件列表查看文件是否上传成功</p>
-</li>
-</ol>
 
 
 

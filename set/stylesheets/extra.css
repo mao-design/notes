@@ -3,6 +3,8 @@
 	scroll-behavior: smooth;
 } */
 
+
+/* 提醒栏样式 */
 [data-md-color-primary=pink] .md-typeset blockquote {
 	background: #ababab33;
 }
@@ -58,4 +60,22 @@
 /* 复制按钮颜色 */
 .md-clipboard {
 	color: #00000000;
+}
+
+/* 标题样式 */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+	font-weight: bold;
+}
+
+/* 标题一之间的外边距，标题一外边距不需要太大 */
+.md-typeset h1 {
+	margin: -0.12em 0 .64em;
+}
+
+/* 标题之间的外边距 */
+.md-typeset h2,
+.md-typeset h3 {
+	margin: 2em 0 .64em;
 }

@@ -14,7 +14,7 @@
       
       
       <link rel="icon" href="../../set/img/favicon1.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.12">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.13">
     
     
       
@@ -79,6 +79,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#nodejs" class="md-skip">
+          跳转至
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -414,6 +419,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Vuepress
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -423,6 +439,59 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      安装node.js
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      配置环境变量
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#yarn" class="md-nav__link">
+    <span class="md-ellipsis">
+      安装yarn
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vuepress" class="md-nav__link">
+    <span class="md-ellipsis">
+      配置Vuepress
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -454,6 +523,50 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      安装node.js
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      配置环境变量
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#yarn" class="md-nav__link">
+    <span class="md-ellipsis">
+      安装yarn
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vuepress" class="md-nav__link">
+    <span class="md-ellipsis">
+      配置Vuepress
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -470,27 +583,21 @@
   <h1>Vuepress</h1>
 
 <p>本教程是基于CentOS 7搭建的</p>
-<ol>
-<li>安装node.js</li>
-</ol>
+<h2 id="nodejs">安装node.js<a class="headerlink" href="#nodejs" title="Permanent link">&para;</a></h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>wget<span class="w"> </span>https://npm.taobao.org/mirrors/node/v12.4.0/node-v12.4.0-linux-x64.tar.xz
 </code></pre></div></td></tr></table></div>
 <p>解压安装包移动到 <code>/usr/local</code> 目录中并重命名</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>tar<span class="w"> </span>-xvf<span class="w"> </span>node-v12.4.0-linux-x64.tar.xz<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>mv<span class="w"> </span>node-v12.4.0-linux-x64/<span class="w"> </span>/usr/local/node
 </code></pre></div></td></tr></table></div>
-<p>配置环境变量</p>
+<h2 id="_1">配置环境变量<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;export PATH=</span><span class="nv">$PATH</span><span class="s2">:/usr/local/node/bin&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/etc/profile
 <span class="nb">source</span><span class="w"> </span>/etc/profile
 </code></pre></div></td></tr></table></div>
-<ol>
-<li>安装yarn</li>
-</ol>
+<h2 id="yarn">安装yarn<a class="headerlink" href="#yarn" title="Permanent link">&para;</a></h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>yarn
 </code></pre></div></td></tr></table></div>
-<ol>
-<li>配置Vuepress</li>
-</ol>
+<h2 id="vuepress">配置Vuepress<a class="headerlink" href="#vuepress" title="Permanent link">&para;</a></h2>
 <p>创建一个文件夹用于存放Vuepress文件</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>mkdir<span class="w"> </span>vuepress-starter<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>vuepress-starter
 </code></pre></div></td></tr></table></div>
