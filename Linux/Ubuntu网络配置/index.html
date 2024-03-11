@@ -490,6 +490,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../Linux%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linux磁盘分区
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../SSH%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5/" class="md-nav__link">
         
   
@@ -618,25 +639,25 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      启动无线
+      启动无线网络
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ip" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      设置无线静态IP
+      设置无线网络
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ip_1" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      设置有线静态IP
+      设置有线网络
     </span>
   </a>
   
@@ -685,25 +706,25 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      启动无线
+      启动无线网络
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ip" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      设置无线静态IP
+      设置无线网络
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ip_1" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      设置有线静态IP
+      设置有线网络
     </span>
   </a>
   
@@ -730,7 +751,7 @@
 <p><code>ethtool 网卡名称</code> 查看网卡是千兆还是百兆（在<code>Supported link modes</code>那里显示的有 <code>1000baseT/Full</code> 则表示该网卡是千兆）</p>
 <p>查看网卡型号 <code>lspci -vnn | grep Network</code></p>
 </blockquote>
-<h3 id="_1">启动无线<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<h3 id="_1">启动无线网络<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p>参考<a href="https://ubuntuqa.com/article/1570.html">“SIOCSIFFLAGS：由于RF-kill而无法进行操作”？</a></p>
 <p>参考<a href="https://blog.csdn.net/gongdiwudu/article/details/125593072">Ubuntu系统如何连接WiFi</a></p>
@@ -803,8 +824,8 @@
 <p>连接指定的WiFi热点 <code>sudo nmcli dev wifi connect "WiFi名称" password "WiFi密码" ifname wlan0</code>  （<code>wlan0</code>是无线网卡的名称）</p>
 </li>
 </ul>
-<h3 id="ip">设置无线静态IP<a class="headerlink" href="#ip" title="Permanent link">&para;</a></h3>
-<p><strong>静态</strong>（STATIC）</p>
+<h3 id="_2">设置无线网络<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p><strong>静态</strong>（STATIC，静态IP）</p>
 <blockquote>
 <p>参考 <a href="https://www.cnblogs.com/floud/p/10545924.html">Ubuntu-Server18.04开启无线网卡并配置静态ip</a></p>
 </blockquote>
@@ -841,7 +862,7 @@
 <span class="w">       </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
 </code></pre></div></td></tr></table></div>
 <hr />
-<p><strong>动态</strong>（DHCP）</p>
+<p><strong>动态</strong>（DHCP，动态IP）</p>
 <p>终端中输入命令 <code>nmtui</code></p>
 <p>选择<code>Edit a connection</code></p>
 <p>选择自己的网卡，我这里是<code>ens33</code>，所以我就选择<code>ens33</code>，然后在选择旁边的<code>Edit</code></p>
@@ -851,10 +872,11 @@
 <p>然后选择<code>Activate a connection</code>,回车</p>
 <p>看到<code>ens33</code>旁边有个<code>*</code>号说明已激活，如果没有，则按回车键即可，在将选项移到<code>Back</code>回车既可回到初始界面</p>
 <p>选择<code>Quit</code>即可退出</p>
-<h3 id="ip_1">设置有线静态IP<a class="headerlink" href="#ip_1" title="Permanent link">&para;</a></h3>
+<h3 id="_3">设置有线网络<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p>参考 <a href="https://blog.csdn.net/IT_SoftEngineer/article/details/112794427#:~:text=【Linux】ubuntu18.04修改IP为静态IP并能够上网（傻瓜式教学） 1 1. 终端下输入 2 2. 在终端下输入 3,4. 修改yaml文件，添加如下内容 5 5. 保存配置，在终端下输入 6 6. 验证是否修改为静态IP，及是否可以上网">ubuntu18.04修改IP为静态IP并能够上网</a></p>
 </blockquote>
+<p>设置有线静态<code>IP</code></p>
 <p>查看网关 <code>route -n</code></p>
 <p>查看网卡 <code>ip add</code> （一般有线的是<code>en</code>开头，无线的是<code>wl</code>开头）</p>
 <p>修改网络配置文件 <code>vim /etc/netplan/01-network-manager-all.yaml</code></p>

@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../SSH%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5/">
+        <link rel="prev" href="../Linux%E5%8E%8B%E7%BC%A9%E5%91%BD%E4%BB%A4/">
       
       
-        <link rel="next" href="../Ubuntu%E5%88%A0%E9%99%A4%E9%9D%9E%E7%A9%BA%E6%96%87%E4%BB%B6/">
+        <link rel="next" href="../SSH%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5/">
       
       
       <link rel="icon" href="../../set/img/favicon1.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Ubuntu关闭桌面GUI - Mao-Design的笔记</title>
+        <title>Linux磁盘分区 - Mao-Design的笔记</title>
       
     
     
@@ -83,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#gui" class="md-skip">
+        <a href="#_1" class="md-skip">
           跳转至
         </a>
       
@@ -119,7 +119,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Ubuntu关闭桌面GUI
+              Linux磁盘分区
             
           </span>
         </div>
@@ -489,10 +489,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../Linux%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Linux磁盘分区
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -501,6 +519,75 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      建立硬盘分区
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="建立硬盘分区">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#swap" class="md-nav__link">
+    <span class="md-ellipsis">
+      swap分区
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      补充
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      格式化分区命令
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      挂载分区
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -531,28 +618,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Ubuntu关闭桌面GUI
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Ubuntu%E5%85%B3%E9%97%AD%E6%A1%8C%E9%9D%A2GUI/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -561,33 +630,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#gui" class="md-nav__link">
-    <span class="md-ellipsis">
-      关闭桌面GUI
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -688,9 +730,51 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#gui" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      关闭桌面GUI
+      建立硬盘分区
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="建立硬盘分区">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#swap" class="md-nav__link">
+    <span class="md-ellipsis">
+      swap分区
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      补充
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      格式化分区命令
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      挂载分区
     </span>
   </a>
   
@@ -711,16 +795,99 @@
                   
 
 
-  <h1>Ubuntu关闭桌面GUI</h1>
+  <h1>Linux磁盘分区</h1>
 
-<h2 id="gui">关闭桌面GUI<a class="headerlink" href="#gui" title="Permanent link">&para;</a></h2>
-<p>永久关闭</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>set-default<span class="w"> </span>multi-user.target
+<h2 id="_1">建立硬盘分区<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>首先通过 <code>fdisk</code> 命令来查看自己磁盘的信息</p>
+<p>输入命令 <code>fdisk -l</code> </p>
+<p><a class="glightbox" href="%E7%A3%81%E7%9B%98%E4%BF%A1%E6%81%AF.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="%E7%A3%81%E7%9B%98%E4%BF%A1%E6%81%AF.png" /></a></p>
+<p><code>/dev/sda</code> 就是自己的磁盘名称（如果你有多个磁盘则需注意磁盘名称，以免后面分错区），后面还有磁盘的容量</p>
+<p>磁盘分区更具自己引导方式的不同分的区也不同</p>
+<blockquote>
+<p>根据自己的喜好来分区，下面是我自己使用的一套分区</p>
+</blockquote>
+<p>BIOS启动</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>boot<span class="w"> </span>–<span class="w"> </span><span class="m">1024</span><span class="w"> </span>MB
+
+swap<span class="w"> </span>–<span class="w"> </span><span class="m">4</span><span class="w"> </span>GB<span class="w"> </span><span class="o">(</span>min<span class="w"> </span><span class="m">512</span><span class="w"> </span>MB<span class="o">)</span>
+
+/<span class="w"> </span>–<span class="w"> </span>~<span class="w"> </span><span class="m">1000</span><span class="w"> </span>GB<span class="w"> </span><span class="o">(</span>remaining<span class="w"> </span>space<span class="o">)</span>
 </code></pre></div></td></tr></table></div>
-<p>永久开启</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>set-default<span class="w"> </span>graphical.target
+<p>UEFI启动</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>/efi<span class="w"> </span>–<span class="w"> </span><span class="m">1024</span><span class="w"> </span>MB
+
+swap<span class="w"> </span>–<span class="w"> </span><span class="m">4</span><span class="w"> </span>GB<span class="w"> </span><span class="o">(</span>min<span class="w"> </span><span class="m">512</span><span class="w"> </span>MB<span class="o">)</span>
+
+/<span class="w"> </span>–<span class="w"> </span>~<span class="w"> </span><span class="m">1000</span><span class="w"> </span>GB<span class="w"> </span><span class="o">(</span>remaining<span class="w"> </span>space<span class="o">)</span>
 </code></pre></div></td></tr></table></div>
-<p>开启或关闭要重启系统之后才能看到效果</p>
+<p>在终端输入命令 <code>cfdisk /dev/sda</code> ，后面的 <code>/dev/sdb</code> 就是你的磁盘名称</p>
+<p><strong>选择 <code>dos</code></strong></p>
+<p><a class="glightbox" href="%E5%88%9B%E5%BB%BA%E5%88%86%E5%8C%BA.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="%E5%88%9B%E5%BB%BA%E5%88%86%E5%8C%BA.png" /></a></p>
+<p><a class="glightbox" href="%E5%88%86%E9%85%8D%E7%A9%BA%E9%97%B4%E5%A4%A7%E5%B0%8F.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="%E5%88%86%E9%85%8D%E7%A9%BA%E9%97%B4%E5%A4%A7%E5%B0%8F.jpg" /></a></p>
+<p><strong>然后在选择 <code>primary</code> （主分区）</strong></p>
+<p>如果你是<code>BIOS</code>引导的，则<code>boot</code>分区的磁盘格式保持默认即可</p>
+<p>如果你是<code>UEFI</code>引导的，则需要把<code>boot</code>分区改为<code>Fat32</code>格式（因为我是用<code>UEFI</code>来引导的，所以我需要把<code>boot</code>分区改为<code>Fat32</code>）</p>
+<p><a class="glightbox" href="boot%E5%88%86%E5%8C%BA.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="boot%E5%88%86%E5%8C%BA.jpg" /></a></p>
+<p><strong>选项 <code>Type</code> 为选择磁盘格式</strong></p>
+<p><a class="glightbox" href="%E9%80%89%E6%8B%A9%E7%A3%81%E7%9B%98%E6%A0%BC%E5%BC%8F.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="%E9%80%89%E6%8B%A9%E7%A3%81%E7%9B%98%E6%A0%BC%E5%BC%8F.jpg" /></a></p>
+<p><a class="glightbox" href="boot%E7%A3%81%E7%9B%98%E6%A0%BC%E5%BC%8F.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="boot%E7%A3%81%E7%9B%98%E6%A0%BC%E5%BC%8F.jpg" /></a></p>
+<h3 id="swap">swap分区<a class="headerlink" href="#swap" title="Permanent link">&para;</a></h3>
+<p><a class="glightbox" href="%E7%A1%AE%E8%AE%A4%E4%B8%BAswap%E6%A0%BC%E5%BC%8F.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="%E7%A1%AE%E8%AE%A4%E4%B8%BAswap%E6%A0%BC%E5%BC%8F.jpg" /></a></p>
+<p><strong>写入分区</strong></p>
+<p><a class="glightbox" href="%E4%BF%9D%E5%AD%98%E5%88%86%E5%8C%BA1.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="保存分区" src="%E4%BF%9D%E5%AD%98%E5%88%86%E5%8C%BA1.jpg" /></a></p>
+<p><strong>然后在输入 yes，回车，既可保存分区</strong></p>
+<p><a class="glightbox" href="%E4%BF%9D%E5%AD%98%E5%88%86%E5%8C%BA.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="%E4%BF%9D%E5%AD%98%E5%88%86%E5%8C%BA.jpg" /></a></p>
+<p><code>Quit</code> 表示退出</p>
+<h3 id="_2">补充<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>然后在使用 <code>fdisk -l</code> 查看自己的磁盘分区情况</p>
+<p><a class="glightbox" href="%E5%88%86%E5%8C%BA%E6%83%85%E5%86%B5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="%E5%88%86%E5%8C%BA%E6%83%85%E5%86%B5.png" /></a></p>
+<p>可以看到 <code>/dev/sda</code> 磁盘已经被分为三个区了</p>
+<h2 id="_3">格式化分区命令<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>上面的<code>fdisk</code>命令其实已经帮我们格式化好了的，这里主要讲解格式化命令</p>
+<p>如果你使用了 <code>fdisk</code> 命令来进行分区，则可以不需要使用下面的命令来进行格式化</p>
+</blockquote>
+<p>格式化根分区</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>mkfs.ext4<span class="w"> </span>/dev/sda3
+</code></pre></div></td></tr></table></div>
+<p>初始化swap分区</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>mkswap<span class="w"> </span>/dev/sda2
+</code></pre></div></td></tr></table></div>
+<hr />
+<p>格式化boot分区（<strong>基于UEFI引导</strong>）</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>mkfs.fat<span class="w"> </span>-F<span class="w"> </span><span class="m">32</span><span class="w"> </span>/dev/sda1
+</code></pre></div></td></tr></table></div>
+<hr />
+<p>格式化boot分区（<strong>基于BIOS引导</strong>）</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>mkfs.ext2<span class="w"> </span>/dev/sda1
+</code></pre></div></td></tr></table></div>
+<hr />
+<h2 id="_4">挂载分区<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p><strong>注意：</strong> 挂载分区一定要遵循顺序，先挂载根（root）分区（到 <code>/mnt</code>），再挂载引导（boot）分区（到 <code>/mnt/boot</code> 或 <code>/mnt/efi</code>，如果单独分出来了的话），最后再挂载其他分区。否则您可能遇到安装完成后无法启动系统的问题。、</p>
+<p>挂载根分区</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>mount<span class="w"> </span>/dev/sda3<span class="w"> </span>/mnt
+</code></pre></div></td></tr></table></div>
+<hr />
+<p><strong>下面这两行代码输入一行即可</strong></p>
+<p>挂载boot分区（<strong>对于UEFI引导而言</strong>）</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>mount<span class="w"> </span>--mkdir<span class="w"> </span>/dev/sda1<span class="w"> </span>/mnt/boot
+</code></pre></div></td></tr></table></div>
+<hr />
+<p>挂载boot分区（<strong>对于BIOS引导而言</strong>）</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>mount<span class="w"> </span>--mkdir<span class="w"> </span>/dev/sda1<span class="w"> </span>/mnt/efi
+</code></pre></div></td></tr></table></div>
+<hr />
+<p>挂载swap分区</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>swapon<span class="w"> </span>/dev/sda2
+</code></pre></div></td></tr></table></div>
 
 
 
@@ -759,7 +926,7 @@
       <nav class="md-footer__inner md-grid" aria-label="页脚" >
         
           
-          <a href="../SSH%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5/" class="md-footer__link md-footer__link--prev" aria-label="上一页: SSH远程连接Linux">
+          <a href="../Linux%E5%8E%8B%E7%BC%A9%E5%91%BD%E4%BB%A4/" class="md-footer__link md-footer__link--prev" aria-label="上一页: Linux压缩以及解压文件命令">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -769,20 +936,20 @@
                 上一页
               </span>
               <div class="md-ellipsis">
-                SSH远程连接Linux
+                Linux压缩以及解压文件命令
               </div>
             </div>
           </a>
         
         
           
-          <a href="../Ubuntu%E5%88%A0%E9%99%A4%E9%9D%9E%E7%A9%BA%E6%96%87%E4%BB%B6/" class="md-footer__link md-footer__link--next" aria-label="下一页: Linux删除非空文件夹命令">
+          <a href="../SSH%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5/" class="md-footer__link md-footer__link--next" aria-label="下一页: SSH远程连接Linux">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 下一页
               </span>
               <div class="md-ellipsis">
-                Linux删除非空文件夹命令
+                SSH远程连接Linux
               </div>
             </div>
             <div class="md-footer__button md-icon">
