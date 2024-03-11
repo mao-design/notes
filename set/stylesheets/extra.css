@@ -1,7 +1,7 @@
 /* html {
 	动画样式
 	scroll-behavior: smooth;
-} */
+}*/
 
 
 /* 提醒栏样式 */
@@ -65,7 +65,8 @@
 /* 标题样式 */
 .md-typeset h1,
 .md-typeset h2,
-.md-typeset h3 {
+.md-typeset h3,
+.md-typeset h4 {
 	font-weight: bold;
 }
 
@@ -76,6 +77,12 @@
 
 /* 标题之间的外边距 */
 .md-typeset h2,
-.md-typeset h3 {
-	margin: 2em 0 .64em;
+.md-typeset h3,
+.md-typeset h4 {
+	margin: 1.5em 0 .64em;
+}
+
+/* 标题图标常显示 */
+/*.md-typeset .headerlink {
+     opacity: 1; 
 }
