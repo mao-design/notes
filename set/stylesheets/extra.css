@@ -1,10 +1,8 @@
-/*动画样式*/
+/*动画*/
 html {
 	scroll-behavior: smooth;
 } 
 
-
-/* 提醒栏样式 */
 [data-md-color-primary=pink] .md-typeset blockquote {
 	background: #ababab33;
 }
@@ -23,25 +21,33 @@ html {
 [data-md-color-primary=pink] .md-typeset .highlighttable>tbody>tr>.code>div>pre>code {
 	border-radius: 0px 5px 5px 0px;
 	background: #ababab33;
+	font-size: 14px;
 }
 
 [data-md-color-primary=pink] .highlighttable .linenos {
 	border-radius: 5px 0px 0px 5px;
 	background: #ababab33;
+	font-size: 14px;
 }
 
 [data-md-color-primary=black] .md-typeset .highlighttable>tbody>tr>.code>div>pre>code {
 	border-radius: 0px 5px 5px 0px;
 	background: #5e5e5e33;
+	font-size: 14px;
 }
 
 [data-md-color-primary=black] .highlighttable .linenos {
 	border-radius: 5px 0px 0px 5px;
 	background: #5e5e5e33;
+	font-size: 14px;
+}
+
+p {
+	font-size: 14px;
 }
 
 
-/* 回到顶部标签背景色 */
+/* 回到顶部按钮圆角大小 */
 .md-top {
 	border-radius: 10px;
 }
@@ -50,45 +56,16 @@ html {
 /* 代码背景色 */
 [data-md-color-primary=pink] .md-typeset code {
 	background-color: #dcdcdc;
+	font-size: 14px;
 }
 
 [data-md-color-primary=black] .md-typeset code {
 	background-color: #484747;
+	font-size: 14px;
 }
 
 
 /* 复制按钮颜色 */
 .md-clipboard {
 	color: #00000000;
-}
-
-/* 标题样式 */
-.md-typeset h1,
-.md-typeset h2,
-.md-typeset h3,
-.md-typeset h4 {
-	font-weight: bold;
-}
-
-/* 标题一之间的外边距，标题一外边距不需要太大 */
-.md-typeset h1 {
-	margin: -0.12em 0 .64em;
-}
-
-/* 标题之间的外边距 */
-.md-typeset h2,
-.md-typeset h3,
-.md-typeset h4 {
-	margin: 1.5em 0 .64em;
-}
-
-/* 标题图标常显示 */
-/*.md-typeset .headerlink {
-     opacity: 1; 
-}
-*/
-
-/*图片圆角*/
-img {
-    border-radius: 6px 6px;
 }
