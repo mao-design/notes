@@ -1,4 +1,4 @@
-/*动画*/
+/*动画样式*/
 html {
 	scroll-behavior: smooth;
 } 
@@ -21,33 +21,25 @@ html {
 [data-md-color-primary=pink] .md-typeset .highlighttable>tbody>tr>.code>div>pre>code {
 	border-radius: 0px 5px 5px 0px;
 	background: #ababab33;
-	font-size: 14px;
 }
 
 [data-md-color-primary=pink] .highlighttable .linenos {
 	border-radius: 5px 0px 0px 5px;
 	background: #ababab33;
-	font-size: 14px;
 }
 
 [data-md-color-primary=black] .md-typeset .highlighttable>tbody>tr>.code>div>pre>code {
 	border-radius: 0px 5px 5px 0px;
 	background: #5e5e5e33;
-	font-size: 14px;
 }
 
 [data-md-color-primary=black] .highlighttable .linenos {
 	border-radius: 5px 0px 0px 5px;
 	background: #5e5e5e33;
-	font-size: 14px;
-}
-
-p {
-	font-size: 14px;
 }
 
 
-/* 回到顶部按钮圆角大小 */
+/* 回到顶部标签背景色 */
 .md-top {
 	border-radius: 10px;
 }
@@ -56,16 +48,18 @@ p {
 /* 代码背景色 */
 [data-md-color-primary=pink] .md-typeset code {
 	background-color: #dcdcdc;
-	font-size: 14px;
 }
 
 [data-md-color-primary=black] .md-typeset code {
 	background-color: #484747;
-	font-size: 14px;
 }
 
 
 /* 复制按钮颜色 */
 .md-clipboard {
 	color: #00000000;
+}
+
+img {
+	border-radius: 6px 6px;
 }
