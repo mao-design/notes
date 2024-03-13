@@ -39,7 +39,7 @@ html {
 }
 
 
-/* 回到顶部标签背景色 */
+/* 回到顶部圆角大小 */
 .md-top {
 	border-radius: 10px;
 }
@@ -48,10 +48,12 @@ html {
 /* 代码背景色 */
 [data-md-color-primary=pink] .md-typeset code {
 	background-color: #dcdcdc;
+	font-size: 15px;
 }
 
 [data-md-color-primary=black] .md-typeset code {
 	background-color: #484747;
+	font-size: 15px;
 }
 
 
@@ -67,4 +69,8 @@ img {
 /*标题字体加粗*/
 .md-typeset h1, .md-typeset h2, .md-typeset h3, .md-typeset h4 {
     font-weight: bold;
+}
+
+p {
+	font-size: 15.5px;
 }
