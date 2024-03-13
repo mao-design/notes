@@ -63,3 +63,8 @@ html {
 img {
 	border-radius: 6px 6px;
 }
+
+/*标题字体加粗*/
+.md-typeset h1, .md-typeset h2, .md-typeset h3, .md-typeset h4 {
+    font-weight: bold;
+}
