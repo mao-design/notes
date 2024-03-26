@@ -26,6 +26,7 @@ html {
 [data-md-color-primary=pink] .highlighttable .linenos {
 	border-radius: 5px 0px 0px 5px;
 	background: #ababab33;
+	font-size: 15px;
 }
 
 [data-md-color-primary=black] .md-typeset .highlighttable>tbody>tr>.code>div>pre>code {
@@ -36,6 +37,7 @@ html {
 [data-md-color-primary=black] .highlighttable .linenos {
 	border-radius: 5px 0px 0px 5px;
 	background: #5e5e5e33;
+	font-size: 15px;
 }
 
 
